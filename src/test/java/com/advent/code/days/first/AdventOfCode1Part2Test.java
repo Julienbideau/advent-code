@@ -1,4 +1,6 @@
-import com.advent.code.*;
+package com.advent.code.days.first;
+
+import com.advent.code.common.Runner;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -14,16 +16,16 @@ public class AdventOfCode1Part2Test {
 
     @Test
     public void shouldBeOkWithSample() throws IOException {
-        final InputValue input = runner.run(new Parser(), "input_sample.txt");
+        final InputValue input = runner.run(new Parser(), "1/input_sample.txt");
         final Integer maximumCaloriesCarriedByElve = adventOfCode1.returnBest3ElvesCarriyingMaxCalories(input.getElves());
-        assertEquals(24000, maximumCaloriesCarriedByElve);
+        assertEquals(45000, maximumCaloriesCarriedByElve);
     }
 
     @Test
     public void shouldBeOkWithRightInput() throws IOException {
-        final InputValue input = runner.run(new Parser(), "input.txt");
+        final InputValue input = runner.run(new Parser(), "1/input.txt");
         final Integer maximumCaloriesCarriedByElve = adventOfCode1.returnBest3ElvesCarriyingMaxCalories(input.getElves());
-        assertEquals(64929, maximumCaloriesCarriedByElve);
+        assertEquals(193697, maximumCaloriesCarriedByElve);
     }
 
     @Test

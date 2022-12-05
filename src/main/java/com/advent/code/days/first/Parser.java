@@ -1,4 +1,4 @@
-package com.advent.code;
+package com.advent.code.days.first;
 
 import com.advent.code.common.AdventOfCodeParser;
 

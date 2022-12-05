@@ -1,4 +1,4 @@
-package com.advent.code;
+package com.advent.code.days.first;
 
 public class Items {
 
