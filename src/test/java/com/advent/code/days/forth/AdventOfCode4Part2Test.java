@@ -19,13 +19,13 @@ public class AdventOfCode4Part2Test {
     public void shouldBeOkWithSample() throws IOException {
         com.advent.code.days.forth.InputValue input = runner.run(new Parser(), "4/input_sample.txt");
         long pairsFullyContainedByOtherOneTotal = this.adventOfCode4.countPairsFullyContainsOrEqualsByOther(input.getPairs());
-        assertEquals(2, pairsFullyContainedByOtherOneTotal);
+        assertEquals(4, pairsFullyContainedByOtherOneTotal);
     }
 
     @Test
     public void shouldBeOkWithRightInput() throws IOException {
         InputValue input = runner.run(new Parser(), "4/input.txt");
         long pairsFullyContainedByOtherOneTotal = this.adventOfCode4.countPairsFullyContainsOrEqualsByOther(input.getPairs());
-        assertEquals(580, pairsFullyContainedByOtherOneTotal);
+        assertEquals(895, pairsFullyContainedByOtherOneTotal);
     }
 }

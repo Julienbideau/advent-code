@@ -41,12 +41,12 @@ public class AdventOfCode4 {
         Assignment leftAssignment = pair.getLeftAssignment();
         Assignment rightAssignment = pair.getRightAssignment();
         if (leftAssignment.beginRange > rightAssignment.beginRange) {
-            if (leftAssignment.beginRange < rightAssignment.endRange) {
+            if (leftAssignment.beginRange <= rightAssignment.endRange) {
                 return true;
             }
         }
         if (leftAssignment.beginRange < rightAssignment.beginRange) {
-            if (rightAssignment.beginRange < leftAssignment.endRange) {
+            if (rightAssignment.beginRange <= leftAssignment.endRange) {
                 return true;
             }
 
