@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AdventOfCode4Part2Test {
 
-    public AdventOfCode4 adventOfCode4 = new AdventOfCode4();
+    public AdventOfCode5 adventOfCode4 = new AdventOfCode5();
     public Runner runner = new Runner();
 
     public AdventOfCode4Part2Test() {

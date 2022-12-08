@@ -3,7 +3,7 @@ package com.advent.code.days.forth;
 import java.util.List;
 import java.util.Objects;
 
-public class AdventOfCode4 {
+public class AdventOfCode5 {
 
     public long countPairsFullyContainsByOther(List<Pair> pairs) {
         return pairs.stream().filter(this::fullyContainsByOther).count();
